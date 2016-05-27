@@ -1,18 +1,11 @@
-var GitHubFinder = require('./githubfinder.js').GitHubFinder;
-
-var apiKey = require('./../.env').apiKey;
-
+var Git = require('./../js/githubfinder.js').Git;
 
 $(document).ready(function() {
+  var git = new Git();
   $('#userFind').click(function() {
     var user = $('#user').val();
-    
-    exports.getRepos = function(){
-      $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
-        console.log(response);
-      }).fail(function(error){
-        console.log(error.responseJSON.message);
-      });
-    });
+    var newUser = git.getRepos(user);
+    console.log(newUser);
+    $("#showUser").text(newUser);
   });
 });
