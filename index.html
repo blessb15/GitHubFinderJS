@@ -2,21 +2,28 @@
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>GitHubFinder</title>
   </head>
   <body>
-    <div class="container center">
-      <h1>Search For a GitHub User!</h1>
+    <div class="jumbotron center font">
+      <h1>GitHub Finder</h1>
+      <br>
+      <br>
       <label for="user">Enter User:</label>
       <input id="user" type="text">
       <button class="btn-success" id="userFind">Get User!</button>
-      <br>
+    </div>
+    <div class="container center">
       <br>
       <div id="showImg">
       </div>
       <div id="showUser">
+      </div>
+      <br>
+      <div id="showRepos">
       </div>
     </div>
   </body>
