@@ -4,7 +4,7 @@ Page where you can search for GitHub users by their username and see details abo
 
 ## Setup Instructions
 
-* _Download files._
+*_Download files._
 *_install node.js_
 *_install npm_
 *_intstall bower_
