@@ -1,16 +1,18 @@
 var GitHubFinder = require('./githubfinder.js').GitHubFinder;
 
-// var apiKey = require('./../.env').apiKey;
+var apiKey = require('./../.env').apiKey;
 
 
 $(document).ready(function() {
-  $('#weatherLocation').click(function() {
-    var city = $('#location').val();
-    $('#location').val("");
-    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
-      $('.showWeather').text("The humidity in " + city + " is " + response.main.humidity + "%");
-    }).fail(function(error) {
-      $('.showWeather').text(error.responseJSON.message);
+  $('#userFind').click(function() {
+    var user = $('#user').val();
+    
+    exports.getRepos = function(){
+      $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
+        console.log(response);
+      }).fail(function(error){
+        console.log(error.responseJSON.message);
+      });
     });
   });
 });
