@@ -4,12 +4,12 @@ Page where you can search for GitHub users by their username and see details abo
 
 ## Setup Instructions
 
-*_Download files._
-*_install node.js_
-*_install npm_
-*_intstall bower_
-*_install gulp_
-*_run "gulp serve" in command line_
+* _Download files._
+* _install node.js_
+* _install npm_
+* _intstall bower_
+* _install gulp_
+* _run "gulp serve" in command line_
 
 ## Known Bugs
 
