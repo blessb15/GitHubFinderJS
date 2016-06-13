@@ -21,8 +21,9 @@ exports.Git.prototype.getReposImg = function(user, displayDataFunction){
 };
 
 exports.Git.prototype.getRepos = function(user, displayDataFunction){
-  $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
-    displayDataFunction(response.public_repos);
+  $.get('https://api.github.com/users/' + user + '/repos?access_token=' + apiKey).then(function(response){
+    console.log(response)
+    displayDataFunction(response);
   }).fail(function(error){
     $('#showRepos').text("Error: Not Found");
   });

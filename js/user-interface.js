@@ -9,8 +9,17 @@ var displayImg = function(response) {
 };
 
 var displayRepos = function(response) {
-  $('#showRepos').html("Public Repos: " + response + "");
-};
+  var i = 0;
+
+  while(i <= response.length - 1){
+    if (response[i].description.length < 1){
+      response[i].description = "not provided";
+    }
+    console.log(response[17].description);
+    $('#showRepos').append("<h5>Name: " + response[i].name + "</h5><h5>Description: " + response[i].description + "</h5><br>");
+    i++;
+  }
+}
 
 $(document).ready(function() {
   var gitObject = new Git();
