@@ -6,9 +6,10 @@ Page where you can search for GitHub users by their username and see details abo
 
 * _Download files_
 * _install node.js_
-* _install npm_
-* _intstall bower_
-* _install gulp_
+* _install npm globally_
+* _intstall bower globally_
+* _install gulp globally_
+* _get personal github api key and place it in an .env file (check dummy env in files)_
 * _run "gulp serve" in command line_
 
 ## Known Bugs
