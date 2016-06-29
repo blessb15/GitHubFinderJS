@@ -10,6 +10,7 @@ Page where you can search for GitHub users by their username and see details abo
 * _intstall bower globally_
 * _install gulp globally_
 * _get personal github api key and place it in an .env file (check dummy env in files)_
+* _run "gulp build" in command line_
 * _run "gulp serve" in command line_
 
 ## Known Bugs
